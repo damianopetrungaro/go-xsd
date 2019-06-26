@@ -6,9 +6,9 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/metaleap/go-util/str"
+	"github.com/damianopetrungaro/go-util/str"
 
-	xsdt "github.com/metaleap/go-xsd/types"
+	xsdt "github.com/damianopetrungaro/go-xsd/types"
 )
 
 const (
@@ -277,7 +277,7 @@ func (me *ComplexType) makePkg(bag *PkgBag) {
 				ctValueType = me.SimpleContent.RestrictionSimpleContent.SimpleTypes[0].Name.String()
 			}
 			for _, enum := range me.SimpleContent.RestrictionSimpleContent.Enumerations {
-				println("ENUMTODO!?! Whoever sees this message, please post an issue at github.com/metaleap/go-xsd with a link to the XSD..." + enum.selfName().String())
+				println("ENUMTODO!?! Whoever sees this message, please post an issue at github.com/damianopetrungaro/go-xsd with a link to the XSD..." + enum.selfName().String())
 			}
 		}
 	}

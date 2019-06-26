@@ -11,9 +11,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/metaleap/go-util/fs"
-	"github.com/metaleap/go-util/net"
-	"github.com/metaleap/go-util/str"
+	"github.com/damianopetrungaro/go-util/fs"
+	"github.com/damianopetrungaro/go-util/net"
+	"github.com/damianopetrungaro/go-util/str"
 )
 
 const (

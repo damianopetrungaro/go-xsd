@@ -13,7 +13,7 @@ go-xsd/xsd-makepkg
 
 A command-line tool to generate Go "XML wrapper" package sources for specified XSD schema URIs.
 
-If no arguments are specified, this tool proceeds to (re)generate all Go packages for various common XML formats in your local $GOPATH-relative directory corresponding to the **http://github.com/metaleap/go-xsd-pkg** repository. For more details on command-line arguments for *xsd-makepkg*: scroll down to the bottom of this readme.
+If no arguments are specified, this tool proceeds to (re)generate all Go packages for various common XML formats in your local $GOPATH-relative directory corresponding to the **http://github.com/damianopetrungaro/go-xsd-pkg** repository. For more details on command-line arguments for *xsd-makepkg*: scroll down to the bottom of this readme.
 
 Each generated wrapper package contains the type structures required to easily **xml.Unmarshal()** an XML document based on that XSD.
 
@@ -86,7 +86,7 @@ A) Suppose you have an XML format where the root element (and only that one) is 
     <gopher>
 
 
-B) Open the generated Go package source files under **$GOPATH/src/github.com/metaleap/go-xsd-pkg/yourdomain.org/xsd/gopher.xsd_go/*.go** (unless you used custom paths when you ran the **go-xsd/xsd-makepkg** tool)
+B) Open the generated Go package source files under **$GOPATH/src/github.com/damianopetrungaro/go-xsd-pkg/yourdomain.org/xsd/gopher.xsd_go/*.go** (unless you used custom paths when you ran the **go-xsd/xsd-makepkg** tool)
 
 C) Search for an occurence of either:
 
@@ -109,7 +109,7 @@ Command-line flags for *go-xsd/xsd-makepkg* tool:
 =================================================
 
 
-- **-basepath=""**: Defaults to github.com/metaleap/go-xsd-pkg. A $GOPATH/src/-relative path (always a slash-style path, even on Windows) where XSD files are downloaded to / loaded from and generated Go wrapper packages are created. Any XSD imports are also rewritten as Go imports from that path (but are not otherwise auto-magically processed in any way).
+- **-basepath=""**: Defaults to github.com/damianopetrungaro/go-xsd-pkg. A $GOPATH/src/-relative path (always a slash-style path, even on Windows) where XSD files are downloaded to / loaded from and generated Go wrapper packages are created. Any XSD imports are also rewritten as Go imports from that path (but are not otherwise auto-magically processed in any way).
 - **-local=true**: Local copy -- only downloads if file does not exist locally
 - **-parse=false**: Not necessary, unless the generated Go wrapper package fails to compile with either the error "*cannot convert {value} to type {type}*" or "*cannot use {value} (type {type}) as type {type} in return argument*" -- ultimately down to a slightly faulty XSD file, but while rare, those exist (hello, KML using 0 and 1 for *xs:boolean*s that are clearly spec'd to be only ever either *true* or *false*...)
 - **-uri=""**: The XML Schema Definition file URIs to generate a Go wrapper packages from, whitespace-separated. (For each, the protocol prefix can be omitted, it then defaults to *http://*. Only protocols understood by the *net/http* package are supported.)

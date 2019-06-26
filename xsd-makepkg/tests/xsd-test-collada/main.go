@@ -4,12 +4,12 @@ import (
 	"encoding/xml"
 	"log"
 
-	"github.com/metaleap/go-xsd/xsd-makepkg/tests"
+	"github.com/damianopetrungaro/go-xsd/xsd-makepkg/tests"
 
-	"github.com/metaleap/go-util/dev/go"
+	"github.com/damianopetrungaro/go-util/dev/go"
 
-	collada14 "github.com/metaleap/go-xsd-pkg/khronos.org/files/collada_schema_1_4_go"
-	collada15 "github.com/metaleap/go-xsd-pkg/khronos.org/files/collada_schema_1_5_go"
+	collada14 "github.com/damianopetrungaro/go-xsd-pkg/khronos.org/files/collada_schema_1_4_go"
+	collada15 "github.com/damianopetrungaro/go-xsd-pkg/khronos.org/files/collada_schema_1_5_go"
 )
 
 type Col14Doc struct {

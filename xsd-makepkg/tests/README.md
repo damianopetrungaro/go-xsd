@@ -1,6 +1,6 @@
 # tests
 --
-    import "github.com/metaleap/go-xsd/xsd-makepkg/tests"
+    import "github.com/damianopetrungaro/go-xsd/xsd-makepkg/tests"
 
 	A simple test function shared by the various test programs inside this directory (rss, atom, collada, svg etc.)
 

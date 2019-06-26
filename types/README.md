@@ -1,6 +1,6 @@
 # xsdt
 --
-    import "github.com/metaleap/go-xsd/types"
+    import "github.com/damianopetrungaro/go-xsd/types"
 
 A tiny package imported by all "go-xsd"-generated packages.
 
